@@ -1,0 +1,50 @@
+# Developed by Simply UY / Guilledll
+# Guilledll on Github: https://github.com/Guilledll
+# Simply UY on Youtube: https://www.youtube.com/c/SimplyUY 
+# Video Tutorial: **URL**
+
+# Internal name for your lando app
+name: svelte-demo
+
+# Custom defined services for your app
+# Docs: https://docs.lando.dev/config/services.html
+services:
+  appserver:
+    # Node.js server needed by Svelte
+    # Docs: https://docs.lando.dev/config/node.htm
+    type: node:16
+    
+    # Start npm server with host and port to allow compatibility
+    # with lando's (and docker) hosting and port system
+    command: npm run dev -- --host=0.0.0.0 --port=80 --open
+    
+    # Run this command only on "lando rebuild" or first "lando start"
+    install_dependencies_as_me:
+      - npm install
+
+# Add tools to use in the lando container
+# Docs: https://docs.lando.dev/config/tooling.html
+tooling:
+  # Allow using npm commands in the container
+  npm:
+    service: appserver
+  # Allow using node commands in the container
+  node:
+    service: appserver
+
+# Launch this events on every "lando start" (optional)
+# Docs: https://docs.lando.dev/config/events.html#discovering-events
+events:
+  pre-start:
+    - npm install
+
+# Define custom domain to setup the app (optional)
+# Docs: https://docs.lando.dev/config/proxy.html#proxy
+proxy:
+  appserver:
+    - svelte-demo.lndo.site
+
+# Exclude folders to optimize docker performance (recommended)
+# Docs: https://docs.lando.dev/config/performance.html
+exclude:
+  - node_modules
