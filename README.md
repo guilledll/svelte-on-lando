@@ -14,7 +14,7 @@
 
 **Desarollado por [Simply UY](https://www.youtube.com/c/SimplyUY) / [Guilledll](https://github.com/Guilledll)**
 
-Mira este [video tutorial 📽️]() para configurar tu proyecto!
+Mira este [video tutorial 📽️](https://youtu.be/QAF-XpFa60M) para configurar tu proyecto!
 
 ⬇️ ⬇️ ⬇️
 
@@ -24,7 +24,7 @@ Siga estos pasos para configurar su proyecto:
 
 1. Renombre `.lando-es.yml` a `.lando.yml`
 2. Ubique el archivo en una carpeta vacía o en la raíz de su proyecto Svelte
-3. Siga los pasos descritos en [este video]()!
+3. Siga los pasos descritos en [este video](https://youtu.be/QAF-XpFa60M)!
 4. Disfrute su aplicación Svelte con Lando!
 
 📣 Colaboración:
@@ -40,7 +40,7 @@ Siga estos pasos para configurar su proyecto:
 
 **Developed by [Simply UY](https://www.youtube.com/c/SimplyUY) / [Guilledll](https://github.com/Guilledll)**
 
-Watch this [video tutorial 📽️]() to setup a new project!
+Watch this [video tutorial 📽️](https://youtu.be/QAF-XpFa60M) to setup a new project!
 
 ⬇️ ⬇️ ⬇️
 
@@ -50,7 +50,7 @@ Follow this steps to setup your project:
 
 1. Rename from `.lando-en.yml` to `.lando.yml`
 2. Move file to an empty folder or to root of your Svelte existing project
-3. Follow steps shown on [this video]()!
+3. Follow steps shown on [this video](https://youtu.be/QAF-XpFa60M)!
 4. Enjoy your Svelte App with Lando!
 
 📣 Collaboration:
